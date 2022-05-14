@@ -2,8 +2,11 @@ package com.forsh.customer;
 
 import lombok.Data;
 
+
 @Data
-public record CustomerRequest(String firstName,
-                              String lastName,
-                              String email) {
+public class CustomerRequest {
+
+    private String firstName;
+    private String lastName;
+    private String email;
 }
