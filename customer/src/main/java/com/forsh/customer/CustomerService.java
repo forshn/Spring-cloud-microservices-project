@@ -13,8 +13,9 @@ public record CustomerService(
                 .lastName(customerRequest.getLastName())
                 .email(customerRequest.getEmail()).build();
 
-
+            // todo: check if fraudster
             customerRepository.save(customer);
+            // todo: send notification
 
     }
 }
