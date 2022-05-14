@@ -13,6 +13,6 @@ public record CustomerService(
                 .lastName(customerRequest.getLastName())
                 .email(customerRequest.getEmail()).build();
 
-
+        customerRepository.save(customer);
     }
 }
